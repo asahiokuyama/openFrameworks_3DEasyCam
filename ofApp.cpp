@@ -6,13 +6,7 @@ void ofApp::setup(){
     ofEnableDepthTest();
     cam.setDistance(100);
     
-//    light.enable();
-//    light.setSpotlight();
-//    light.setPosition(-100, 100, 100);
-//    light.setSpecularColor(ofFloatColor(1.0, 1.0, 1.0));
-//    light.setDiffuseColor(ofFloatColor(1, 0.5, 1.0));
-//    light.setAmbientColor(ofFloatColor(1, 0.5, 0.3, 1.0));
-    
+
     for(int i = 0;i <num;i++){
         pos[i].set(ofRandom(ofGetWidth()),ofRandom(ofGetHeight()));
         vel[i].set(ofRandom(-1,1),ofRandom(-1,1));
@@ -34,8 +28,6 @@ void ofApp::draw(){
     ofSetColor(255);
 
     cam.begin();
-//    ofRotateY(Yaxis++);
-//    ofRotateX(Xaxis++);
 
     for(int i = 0;i < num;i++){
         sphere.set(100, 10);
